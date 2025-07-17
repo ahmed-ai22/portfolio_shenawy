@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الشناوي - مصمم ومطور مواقع إلكترونية</title>
+    <meta name="description" content="مصمم ومطور مواقع إلكترونية محترف، خبرة في تطوير المواقع الحديثة والتطبيقات التفاعلية">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <h3>جاري التحميل...</h3>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <span class="logo-text">الشناوي</span>
+                    <span class="logo-subtitle">مطور ويب</span>
+                </a>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+                <li><a href="#about" class="nav-link">عني</a></li>
+                <li><a href="#services" class="nav-link">خدماتي</a></li>
+                <li><a href="#portfolio" class="nav-link">أعمالي</a></li>
+                <li><a href="#skills" class="nav-link">مهاراتي</a></li>
+                <li><a href="#contact" class="nav-link">تواصل معي</a></li>
+            </ul>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="theme-switch">
+                <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+                <label for="theme-toggle" class="theme-label">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">مرحباً، أنا</span>
+                        <span class="name">أحمد</span>
+                        <span class="typing-text" id="typing-text"></span>
+                    </h1>
+                    <p class="hero-description">
+                        مطور ومصمم مواقع إلكترونية محترف، أحول أفكارك إلى مواقع رقمية رائعة
+                        وتطبيقات تفاعلية حديثة بأحدث التقنيات والأدوات
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="25">0</span>
+                            <span class="stat-label">مشروع مكتمل</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="3">0</span>
+                            <span class="stat-label">سنوات خبرة</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="20">0</span>
+                            <span class="stat-label">عميل راضي</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">
+                            <i class="fas fa-briefcase"></i>
+                            استعرض أعمالي
+                        </a>
+                        <a href="https://wa.me/966501234567" target="_blank" class="btn btn-outline" style="text-decoration: none;">
+                            <i class="fab fa-whatsapp" style="font-size: 36px; color: #25D366;"></i>
+                            تواصل معي
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="hero-social">
+                    <a href="#" class="social-link" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div> -->
+            </div>
+            
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
+                <div class="image-container">
+                    <div class="image-frame">
+                        <img src="img/about_me.png" alt="الشناوي - مطور ويب" class="hero-avatar">
+                        <div class="image-decoration"></div>
+                    </div>
+                    <div class="floating-icons">
+                        <div class="floating-icon" style="--delay: 0s">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 1s">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 2s">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 3s">
+                            <i class="fab fa-wordpress"></i>
+                        </div>
+                        <div class="floating-icon" style="--delay: 1s">
+                            <i class="fab fa-php"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span class="scroll-text">تمرير للأسفل</span>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">من أنا؟</h2>
+                <p class="section-subtitle">تعرف على قصتي المهنية وخبراتي</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>مطور ومصمم مواقع شغوف بالتكنولوجيا</h3>
+                    <p>
+                        مرحباً! أنا أحمد، مطور ومصمم مواقع إلكترونية محترف مع أكثر من 3 سنوات من الخبرة
+                        في تطوير المواقع والتطبيقات الرقمية. أتخصص في تحويل الأفكار الإبداعية إلى مواقع
+                        وتطبيقات تفاعلية حديثة باستخدام أحدث التقنيات والأدوات.
+                    </p>
+                    <p>
+                        شغفي الحقيقي يكمن في إنشاء تجارب رقمية استثنائية تجمع بين التصميم الجميل
+                        والوظائف المتقدمة. أسعى دائماً لتطوير مهاراتي ومواكبة أحدث التطورات في عالم
+                        تطوير الويب لتقديم أفضل الحلول لعملائي.
+                    </p>
+                    
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span><strong>العمر:</strong> 27 سنة</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span><strong>الموقع:</strong> مصر</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span><strong>التخصص:</strong>  نظم المعلومات</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span><strong>الخبرة:</strong> +3 سنوات</span>
+                        </div>
+                    </div>
+                    
+                    <div class="about-buttons">
+                        <!-- <a href="files/resume.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i>
+                            تحميل السيرة الذاتية
+                        </a> -->
+                        <a href="https://wa.me/966501234567" target="_blank" class="btn btn-primary" style="text-decoration: none;">
+                            <i class="fab fa-whatsapp" style="font-size: 36px; color: #25D366;"></i>
+                            تواصل معي
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- <div class="about-image" data-aos="fade-left">
+                    <div class="image-wrapper">
+                        <img src="img/about_me.png" alt="أحمد - صورة شخصية">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">خدماتي</h2>
+                <p class="section-subtitle">الحلول التقنية التي أقدمها لعملائي</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>تطوير مواقع الويب</h3>
+                    <p>تطوير مواقع إلكترونية حديثة ومتجاوبة باستخدام أحدث التقنيات مثل HTML5, CSS3, JavaScript, WordPress</p>
+                    <ul class="service-features">
+                        <li>تصميم متجاوب (Responsive)</li>
+                        <li>سرعة تحميل فائقة</li>
+                        <li>تحسين محركات البحث</li>
+                    </ul>
+                </div>
+                
+                
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>تصميم UI/UX</h3>
+                    <p>تصميم واجهات مستخدم جذابة وتجربة مستخدم سلسة مع التركيز على الجمال والوظيفة</p>
+                    <ul class="service-features">
+                        <li>تصميم احترافي</li>
+                        <li>تجربة مستخدم مميزة</li>
+                        <li>نماذج أولية تفاعلية</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>متاجر إلكترونية</h3>
+                    <p>تطوير متاجر إلكترونية شاملة مع أنظمة دفع آمنة وإدارة مخزون متقدمة</p>
+                    <ul class="service-features">
+                        <li>أنظمة دفع آمنة</li>
+                        <li>إدارة المنتجات</li>
+                        <li>تقارير مبيعات</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>تطوير Backend</h3>
+                    <p>تطوير أنظمة خلفية قوية وآمنة باستخدام PHP, Laravel, mysql مع قواعد البيانات المختلفة</p>
+                    <ul class="service-features">
+                        <li>APIs متقدمة</li>
+                        <li>قواعد بيانات محسنة</li>
+                        <li>أمان عالي</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>صيانة ودعم تقني</h3>
+                    <p>خدمات صيانة مستمرة ودعم تقني شامل لضمان عمل موقعك بأفضل أداء دائماً</p>
+                    <ul class="service-features">
+                        <li>مراقبة دائمة</li>
+                        <li>تحديثات أمنية</li>
+                        <li>دعم على مدار الساعة</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">معرض أعمالي</h2>
+                <p class="section-subtitle">مجموعة من أفضل المشاريع التي قمت بتطويرها</p>
+            </div>
+            
+            <div class="portfolio-filters" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">جميع الأعمال</button>
+                <button class="filter-btn" data-filter="wordpress_ec"> متاجر وورد بريس</button>
+                <button class="filter-btn" data-filter="wordpress_we">مواقع وورد بريس</button>
+                <!-- <button class="filter-btn" data-filter="web">مواقع الويب</button> -->
+                <!-- <button class="filter-btn" data-filter="ecommerce">متاجر إلكترونية</button> -->
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="wordpress_ec" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <img src="img/projects/khawaja.png" alt="مشروع 1">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>متجر خواجه</h3>
+                                <p>متجر متخصص في بيع الاجهزه المنزلية</p>
+                                <div class="portfolio-tech">
+                                    <span>wordpress</span>
+                                    <span>theme: Nika</span>
+                                    <span>shop</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="https://khawajah.net" target="_blank" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- start Slider -->
+                <div class="overlay" id="sliderOverlay">                     
+                    <i class="fa-solid fa-xmark fa-3x" id="closeSlider"></i>                                     
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="img/projects/b.png" alt="صورة 1"></div>
+                                <div class="swiper-slide"><img src="img/projects/b1.png" alt="صورة 2"></div>
+                                <div class="swiper-slide"><img src="img/projects/b2.png" alt="صورة 3"></div>
+                                <div class="swiper-slide"><img src="img/projects/b3.png" alt="صورة 3"></div>
+                            </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-click-zones">
+                                <div class="swiper-click-left"></div>
+                            <div class="swiper-click-right"></div>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- end Slider -->
+
+                <div class="portfolio-item" data-category="wordpress_ec" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <img src="img/projects/snap.png" alt="مشروع 1">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>متجر سناب</h3>
+                                <p>متجر متخصص في بيع المتعلقات الشخصية</p>
+                                <div class="portfolio-tech">
+                                    <span>wordpress</span>
+                                    <span>theme: blocksy</span>
+                                    <span>shop</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="https://snapshop.world/" target="_blank" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="wordpress_ec" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <img src="img/projects/xstor.png" alt="مشروع 1">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>متجر بي بلانت</h3>
+                                <p>متجر متخصص في بيع المبيدات والاسمده</p>
+                                <div class="portfolio-tech">
+                                    <span>wordpress</span>
+                                    <span>theme: xstor</span>
+                                    <span>shop</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="https://b-plant.com/" target="_blank" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link" id="openSlider">
+                                        <i class="fas fa-images"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="wordpress_ec" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <img src="img/projects/emara.png" alt="مشروع 1">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>متجر عماره </h3>
+                                <p>متجر متخصص في بيع  العطور </p>
+                                <div class="portfolio-tech">
+                                    <span>wordpress</span>
+                                    <span>theme: woodmart</span>
+                                    <span>shop</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="https://emarafragrance.com/" target="_blank" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="wordpress_we" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <img src="img/projects/royal.png" alt="مشروع 2">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>موقع رويال ستار</h3>
+                                <p>شركه سياحه وسفر</p>
+                                <div class="portfolio-tech">
+                                    <span>wordpress</span>
+                                    <span>theme: Astra</span>
+                                    <span>website</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="https://royalstar.me/" target="_blank" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="wordpress_we" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-image">
+                        <img src="img/projects/marzoky.png" alt="مشروع 3">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>مكتب تسويق</h3>
+                                <p>مكتب للتسويق العقاري</p>
+                                <div class="portfolio-tech">
+                                    <span>wordpress</span>
+                                    <span>theme: Astra</span>
+                                    <span>website</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="https://almarzoki.com/" target="_blank" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="wordpress_we" data-aos="fade-up" data-aos-delay="400">
+                    <div class="portfolio-image">
+                        <img src="img/projects/dyar.png" alt="مشروع 4">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>موقع ديار</h3>
+                                <p>شركه متخصصه في التسويق والاستشارات العقاري</p>
+                                <div class="portfolio-tech">
+                                    <span>WordPress</span>
+                                    <span>theme: Astra</span>
+                                    <span>website</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="https://dyaralorjwan.com/" target="_blank" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="wordpress_we" data-aos="fade-up" data-aos-delay="500">
+                    <div class="portfolio-image">
+                        <img src="img/projects/art_home.png" alt="مشروع 5">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>موقع ارت هوم</h3>
+                                <p>شركه متخصصه في تركيب المطابخ</p>
+                                <div class="portfolio-tech">
+                                    <span>wordpress</span>
+                                    <span>theme: Astra</span>
+                                    <span>website</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="https://arthome-sa.com/" target="_blank" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="wordpress_ec" data-aos="fade-up" data-aos-delay="500">
+                    <div class="portfolio-image">
+                        <img src="img/projects/alzbda.png" alt="مشروع 5">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>موقع الزيده</h3>
+                                <p>متجر متخصص في بيع المتعلقات الشخصية</p>
+                                <div class="portfolio-tech">
+                                    <span>wordpress</span>
+                                    <span>theme: shoptimizer</span>
+                                    <span>shop</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="https://elzebeda.store/" target="_blank" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="wordpress_we" data-aos="fade-up" data-aos-delay="500">
+                    <div class="portfolio-image">
+                        <img src="img/projects/zbom.png" alt="مشروع 5">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>موقع زبوم</h3>
+                                <p>>متجر متخصص في بيع المتعلقات المنزلية</p>
+                                <div class="portfolio-tech">
+                                    <span>wordpress</span>
+                                    <span>theme: blocksy</span>
+                                    <span>website</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="https://landclean-sa.com/" target="_blank" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="wordpress_we" data-aos="fade-up" data-aos-delay="500">
+                    <div class="portfolio-image">
+                        <img src="img/projects/land.png" alt="مشروع 5">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>موقع لاند كلين</h3>
+                                <p>شركة متخصصه في أعمال التنظيف</p>
+                                <div class="portfolio-tech">
+                                    <span>wordpress</span>
+                                    <span>theme: shoptimizer</span>
+                                    <span>shop</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="https://landclean-sa.com/" target="_blank" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="wordpress_we" data-aos="fade-up" data-aos-delay="500">
+                    <div class="portfolio-image">
+                        <img src="img/projects/ahmed.png" alt="مشروع 5">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>موقع ا.د.احمد جمال عزب​</h3>
+                                <p>موقع متخصص في الخدمات الطبية </p>
+                                <div class="portfolio-tech">
+                                    <span>wordpress</span>
+                                    <span>theme: blocksy</span>
+                                    <span>website</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="https://ahmedazab.com/" target="_blank" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="wordpress_we" data-aos="fade-up" data-aos-delay="500">
+                    <div class="portfolio-image">
+                        <img src="img/projects/kabatn.png" alt="مشروع 5">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>موقع كباتن</h3>
+                                <p>موقع  يُقدم خدمات وسيطة بين الشركات الخاصة</p>
+                                <div class="portfolio-tech">
+                                    <span>wordpress</span>
+                                    <span>theme: blocksy</span>
+                                    <span>website</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="https://ksadrivers.com/" target="_blank" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="wordpress_we" data-aos="fade-up" data-aos-delay="500">
+                    <div class="portfolio-image">
+                        <img src="img/projects/asel.png" alt="مشروع 5">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>موقع الأصيل</h3>
+                                <p>شركه تطوير عقاري</p>
+                                <div class="portfolio-tech">
+                                    <span>wordpress</span>
+                                    <span>theme: houzez</span>
+                                    <span>website</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="aseeldevelopments.com" target="_blank" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">مهاراتي التقنية</h2>
+                <p class="section-subtitle">التقنيات والأدوات التي أتقنها في التطوير</p>
+            </div>
+            
+            <div class="skills-content">
+                <div class="skills-categories">
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Frontend Development</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5 & CSS3</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-percentage="95"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript (ES6+)</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-percentage="85"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React.js</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-percentage="80"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">WordPress</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-percentage="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Backend Development</h3>
+                        <div class="skills-list">
+                            <!-- <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-percentage="85"></div>
+                                </div>
+                            </div> -->
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">PHP</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-percentage="80"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-percentage="75"></div>
+                                </div>
+                            </div> -->
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Laravel</span>
+                                    <span class="skill-percentage">60%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-percentage="60"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                        <h3>Database & Tools</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">MySQL</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-percentage="85"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">MongoDB</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-percentage="80"></div>
+                                </div>
+                            </div> -->
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git & GitHub</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-percentage="80"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Docker</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-percentage="70"></div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-icons" data-aos="fade-up" data-aos-delay="400">
+                    <div class="tech-icon">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-js-square"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                     <div class="tech-icon">
+                        <i class="fab fa-wordpress"></i>
+                        <span>WordPress</span>
+                    </div>
+                    <!--<div class="tech-icon">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div> -->
+                    <div class="tech-icon">
+                        <i class="fab fa-php"></i>
+                        <span>PHP</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-laravel"></i>
+                        <span>Laravel</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                    <!-- <div class="tech-icon">
+                        <i class="fab fa-docker"></i>
+                        <span>Docker</span>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">تواصل معي</h2>
+                <p class="section-subtitle">هل لديك مشروع؟ دعنا نبدأ العمل معاً</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>معلومات التواصل</h3>
+                    <p>لا تتردد في التواصل معي لمناقشة مشروعك أو للحصول على استشارة مجانية</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>البريد الإلكتروني</h4>
+                                <span>anmedmohamed1@gmail.com</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/+201094382073" target="_blank" style="text-decoration: none;">
+                        <div class="contact-item" style="cursor: pointer;">
+                                <i class="fab fa-whatsapp" style="font-size: 50px; color: #25D366;"></i>
+                                <div class="contact-details">
+                                    <h4>راسلني على الواتساب</h4>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>رقم الهاتف</h4>
+                                <span>+201094382073</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>الموقع</h4>
+                                <span> القاهره، جمهوريه مصر العربية</span>
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>ساعات العمل</h4>
+                                <span>الأحد - الخميس: 9:00 - 18:00</span>
+                            </div>
+                        </div> -->
+                    </div>
+                    
+                    <!-- <div class="contact-social">
+                        <h4>تابعني على:</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                
+                <!-- <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm" class="form">
+                        <div class="form-group">
+                            <label for="name">الاسم الكامل</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">الموضوع</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">اختر نوع المشروع</option>
+                                <option value="website">تطوير موقع إلكتروني</option>
+                                <option value="wordpres">تطوير موقع شخصي</option>
+                                <option value="ecommerce">متجر إلكتروني</option>
+                                <option value="design">تصميم UI/UX</option>
+                                <option value="consultation">استشارة تقنية</option>
+                                <option value="other">أخرى</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">الميزانية المتوقعة</label>
+                            <select id="budget" name="budget">
+                                <option value="">حدد الميزانية</option>
+                                <option value="1000-5000">1,000 - 5,000 دولار</option>
+                                <option value="5000-10000">5,000 - 10,000 دولار</option>
+                                <option value="10000-20000">10,000 - 20,000 دولار</option>
+                                <option value="20000+">أكثر من 20,000 دولار</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">تفاصيل المشروع</label>
+                            <textarea id="message" name="message" rows="5" placeholder="اكتب تفاصيل مشروعك هنا..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            إرسال الرسالة
+                        </button>
+                    </form>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <h3>الأحمد</h3>
+                        <p>مطور ومصمم مواقع إلكترونية</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>روابط سريعة</h4>
+                        <ul>
+                            <li><a href="#home">الرئيسية</a></li>
+                            <li><a href="#about">عني</a></li>
+                            <li><a href="#services">خدماتي</a></li>
+                            <li><a href="#portfolio">أعمالي</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>خدماتي</h4>
+                        <ul>
+                            <li><a href="#services">تطوير مواقع الويب</a></li>
+                            <li><a href="#services">وورد بريس</a></li>
+                            <li><a href="#services">تصميم UI/UX</a></li>
+                            <li><a href="#services">متاجر إلكترونية</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>تواصل معي</h4>
+                        <ul>
+                            <li><i class="fas fa-envelope"></i> anmedmohamed1@gmail.com</li>
+                            <li><i class="fas fa-phone"></i> +201094382073</li>
+                            <li><i class="fas fa-map-marker-alt"></i> القاهره. مصر</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 الشناوي. جميع الحقوق محفوظة.</p>
+                <div class="footer-bottom-links">
+                    <a href="pup.html" target="_blank">سياسة الخصوصية</a>
+                    <a href="llm.html" target="_blank">شروط الاستخدام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        // Emergency loader hide
+        setTimeout(() => {
+            const loader = document.querySelector('#loader');
+            if (loader && loader.style.display !== 'none') {
+                console.log('Emergency loader hide activated');
+                loader.style.display = 'none';
+            }
+        }, 5000);
+    </script>
+    
+    <script>
+        // Emergency loader hide
+        setTimeout(() => {
+            const loader = document.querySelector('#loader');
+            if (loader && loader.style.display !== 'none') {
+                console.log('Emergency loader hide activated');
+                loader.style.display = 'none';
+            }
+        }, 5000);
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/portfolio.js" defer></script>
+</body>
+</html>
